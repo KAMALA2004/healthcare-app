@@ -1,0 +1,18 @@
+/* src/components/doctor/DoctorDashboard.css */
+.doctor-dashboard {
+    padding: 20px;
+  }
+  
+  .dashboard-sections {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .availability-section, .appointments-section {
+    width: 48%;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  

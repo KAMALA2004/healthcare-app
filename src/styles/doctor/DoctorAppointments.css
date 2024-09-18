@@ -1,0 +1,38 @@
+/* src/components/doctor/DoctorAppointments.css */
+.doctor-appointments {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .appointment-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+  
+  .appointment-actions button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .appointment-actions button:first-child {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .appointment-actions button:first-child:hover {
+    background-color: #27ae60;
+  }
+  
+  .appointment-actions button:last-child {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .appointment-actions button:last-child:hover {
+    background-color: #c0392b;
+  }
+  

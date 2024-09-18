@@ -1,0 +1,41 @@
+/* src/components/doctor/DoctorAvailability.css */
+.doctor-availability {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .doctor-availability form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .doctor-availability input, .doctor-availability button {
+    margin-top: 10px;
+    padding: 8px;
+  }
+  
+  .doctor-availability ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .doctor-availability li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .doctor-availability button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .doctor-availability button:hover {
+    background-color: #c0392b;
+  }
+  
