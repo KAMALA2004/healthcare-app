@@ -9,6 +9,8 @@ import Notifications from './components/doctor/Notifications';
 import ProfilePage from './components/doctor/ProfilePage';
 import DoctorProfileSetup from './components/doctor/DoctorProfileSetup';
 import BookAppointment from './components/patient/BookAppointment';
+import UpcomingConsultations from './components/patient/UpcomingConsultations';
+import Home from './components/patient/Home';
 const App = () => {
     return (
         <Router>
@@ -22,6 +24,8 @@ const App = () => {
                 <Route path="/" element={<DoctorProfileSetup />} />
                 <Route path="/b" element={<ProfilePage />} />
                 <Route path="/w" element={<BookAppointment />} />
+                <Route path="/ph" element={<Home/>}/>
+                <Route path="/uc" element={<UpcomingConsultations/>}/>
             </Routes>
         </Router>
     );

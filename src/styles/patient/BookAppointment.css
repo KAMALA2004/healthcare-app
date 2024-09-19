@@ -1,0 +1,54 @@
+/* Modal background overlay */
+.modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  /* Modal container */
+  .modal-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Modal header and body */
+  .modal-header {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+  
+  .modal-body {
+    margin-bottom: 16px;
+  }
+  
+  /* Buttons styling */
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modal-buttons .MuiButton-root {
+    margin-left: 8px;
+  }
+  
+  .modal-buttons .MuiButton-contained {
+    background-color: #1976d2; /* Primary color */
+  }
+  
+  .modal-buttons .MuiButton-outlined {
+    border-color: #1976d2; /* Primary color */
+    color: #1976d2; /* Primary color */
+  }
+  

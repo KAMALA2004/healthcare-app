@@ -3,6 +3,7 @@ import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css'; // Calendar styles
 import { Modal, Box, Typography, Button } from '@mui/material'; // Modal components
+import '../../styles/patient/BookAppointment.css';
 
 const localizer = momentLocalizer(moment);
 
@@ -96,18 +97,22 @@ const BookAppointment = () => {
       {/* Modal for confirming the booking */}
       {selectedSlot && (
         <Modal open={isModalOpen} onClose={handleCloseModal}>
-          <Box className="modal-box" sx={{ padding: 2 }}>
-            <Typography variant="h6">Confirm Your Booking</Typography>
-            <Typography>
-              From: {moment(selectedSlot.start).format('LLLL')} <br />
-              To: {moment(selectedSlot.end).format('LLLL')}
-            </Typography>
-            <Button variant="contained" color="primary" onClick={handleConfirmBooking} sx={{ mt: 2 }}>
-              Confirm Booking
-            </Button>
-            <Button variant="outlined" onClick={handleCloseModal} sx={{ ml: 2, mt: 2 }}>
-              Cancel
-            </Button>
+          <Box className="modal-overlay">
+            <Box className="modal-box">
+              <Typography className="modal-header" variant="h6">Confirm Your Booking</Typography>
+              <Typography className="modal-body">
+                From: {moment(selectedSlot.start).format('LLLL')} <br />
+                To: {moment(selectedSlot.end).format('LLLL')}
+              </Typography>
+              <Box className="modal-buttons">
+                <Button variant="contained" color="primary" onClick={handleConfirmBooking}>
+                  Confirm Booking
+                </Button>
+                <Button variant="outlined" onClick={handleCloseModal}>
+                  Cancel
+                </Button>
+              </Box>
+            </Box>
           </Box>
         </Modal>
       )}
