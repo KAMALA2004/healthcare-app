@@ -1,5 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
+
 const firebaseConfig = {
     apiKey: "AIzaSyBw4Z2tEVXmDdC2Hm5roLJchtRNGHlytmk",
     authDomain: "healthcare-app-5c517.firebaseapp.com",
@@ -14,5 +16,6 @@ const firebaseConfig = {
 
   // Initialize Firestore
   const firestore = getFirestore(app);
-  
+  const storage = getStorage();
+export { storage };
   export { firestore };

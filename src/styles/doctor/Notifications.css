@@ -1,0 +1,20 @@
+/* Notifications.css continued */
+
+.notifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notifications li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.notifications li:hover {
+    background-color: #f1f1f1;
+}

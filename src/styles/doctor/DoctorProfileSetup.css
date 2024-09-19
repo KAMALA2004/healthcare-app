@@ -1,0 +1,57 @@
+.doctor-profile-setup {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+  }
+  
+  .doctor-profile-setup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-profile-setup form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .doctor-profile-setup label {
+    margin-bottom: 10px;
+  }
+  
+  .doctor-profile-setup input,
+  .doctor-profile-setup textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .doctor-profile-setup button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .gender-options,
+  .consultation-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .gender-options label,
+  .consultation-options label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gender-options input,
+  .consultation-options input {
+    margin-right: 8px;
+  }
+  

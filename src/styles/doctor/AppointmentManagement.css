@@ -1,0 +1,24 @@
+/* Styling for the modal box */
+.modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 24;
+    padding: 20px;
+  }
+  
+  /* Calendar event color based on appointment status */
+  .rbc-event {
+    cursor: pointer;
+  }
+  
+  /* Custom modal styles */
+  .modal-title {
+    margin-bottom: 20px;
+  }
+  
+  

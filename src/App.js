@@ -1,29 +1,30 @@
-// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import DoctorAvailability from './components/doctor/DoctorAvailability';
-import DoctorAppointments from './components/doctor/DoctorAppointments';
-import DoctorCard from './components/doctor/DoctorCard'; // Add if needed
-import ViewDoctorAvailability from './components/patient/ViewDoctorAvailability'; // Add if this needs to be accessible from doctor side
-import BookAppointment from './components/patient/BookAppointment'; // Add if this needs to be accessible from doctor side
-import PatientAppointments from './components/patient/PatientAppointments'; // Add if this needs to be accessible from doctor side
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        {/* Doctor-related routes */}
-        <Route path="/" element={<DoctorAvailability doctorId="exampleDoctorId" />} />
-        <Route path="/appointments" element={<DoctorAppointments doctorId="exampleDoctorId" />} />
-        <Route path="/doctor-card" element={<DoctorCard />} />
-        
-        {/* Patient-related routes if needed */}
-        <Route path="/view-availability" element={<ViewDoctorAvailability />} />
-        <Route path="/book-appointment" element={<BookAppointment />} />
-        <Route path="/patient-appointments" element={<PatientAppointments />} />
-      </Routes>
-    </Router>
-  );
-}
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './components/doctor/Dashboard';
+import AppointmentManagement from './components/doctor/AppointmentManagement';
+import PatientDataManagement from './components/doctor/PatientDataManagement';
+import Telemedicine from './components/doctor/Telemedicine';
+import AnalyticsAndReporting from './components/doctor/AnalyticsAndReporting';
+import Notifications from './components/doctor/Notifications';
+import ProfilePage from './components/doctor/ProfilePage';
+import DoctorProfileSetup from './components/doctor/DoctorProfileSetup';
+import BookAppointment from './components/patient/BookAppointment';
+const App = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/a" element={<Dashboard />} />
+                <Route path="/c" element={<AppointmentManagement />} />
+                <Route path="/d" element={<PatientDataManagement />} />
+                <Route path="/t" element={<Telemedicine />} />
+                <Route path="/r" element={<AnalyticsAndReporting />} />
+                <Route path="/n" element={<Notifications />} />
+                <Route path="/" element={<DoctorProfileSetup />} />
+                <Route path="/b" element={<ProfilePage />} />
+                <Route path="/w" element={<BookAppointment />} />
+            </Routes>
+        </Router>
+    );
+};
 
 export default App;
